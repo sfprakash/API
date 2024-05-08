@@ -1,0 +1,45 @@
+#homepage{
+    display: block;
+}
+#newuserpage{
+    display: none;
+}
+#loginuserpage{
+    display: none;
+}
+#greetingpage{
+    display: none;
+}
+#travelpage{
+    display: none;
+}
+#historypage{
+    display: none;
+}
+#rechargepage{
+    display: none;
+}
+#balancecheckpage{
+    display: none;
+}
+.navbar{
+    width: 100%;
+    background-color: yellowgreen;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.btn{
+    padding: 1rem;
+    margin: auto;
+}
+td, th{
+    padding: 10px;
+}
+table{
+    border: 0.1rem solid yellowgreen;
+    border-radius: 0.5rem;
+    margin: auto;
+    width: 100%;
+}

@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Metro Card Management</title>
+        <link rel="stylesheet" href="CSS/style.css" type="text/CSS">
+        
+    </head>
+    <body>
+        <!--Home Page-->
+        <div id="homepage">
+            <div id="heading"><h1>CHENNAI METRO RAIL</h1></div>
+            <div id="content">
+                <div class="btnfield"><button onclick="NewUser()">New User</button></div>
+                <div class="btnfield"><button onclick="return LoginUser();">User Login</button></div> 
+            </div>
+        </div>
+        <!--Home Page Ends-->
+        <div id="newuserpage">
+            <div>
+                <h1>CREATE ACCOUNT</h1>
+            </div>
+            <div>
+                <label for="username">User Name</label>
+                <input type="text" name="username" id="username" placeholder="Enter User Name">
+            </div>
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="text" name="phone" id="phone" placeholder="Enter Phone Number">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="Enter Password">
+            </div>
+            <div>
+                <label for="cpassword">Confirm Password</label>
+                <input type="password" name="cpassword" id="cpassword" placeholder="Re-Enter Password">
+            </div>
+            <div>
+                <button onclick="CreateAccount();">Create</button>
+            </div>
+        </div>
+        <div id="loginuserpage">
+            <div>
+                <h1>LOGIN</h1>
+            </div>
+            <div>
+                <label for="cardnumber">Card Number</label>
+                <input type="text" name="cardnumber" id="cardnumber" placeholder="Enter Card number">
+            </div>
+            <div>
+                <label for="password">Password</label>
+                <input type="password" name="password" id="loginpassword" placeholder="Enter Your Password">
+            </div>
+            <div>
+                <button onclick="AccountLogin();">Login</button>
+            </div>
+        </div>
+        <div id="greetingpage">
+            <div class="navbar">
+                <div class="btn"><button onclick="RechargePage();">Recharge</button></div>
+                <div class="btn"><button onclick="ShowBalance()">Balance Check</button></div>
+                <div class="btn"><button onclick="TravelPage();">Travel</button></div>
+                <div class="btn"><button onclick="ShowHistory();">Travel History</button></div>
+                <div class="btn"><button onclick="HomePage();">Logout</button></div>
+            </div>
+        </div>
+        <div id="travelpage">
+            <table border="1" id="tickettable">
+
+            </table>
+        </div>
+        <div id="historypage">
+            <table id="historytable">
+
+            </table>
+        </div>
+        <div id="rechargepage">
+            <div><label for="amount">Enter Amount</label></div>
+            <div><input type="number" name="amount" id="rechargeamount"></div>
+            <div><button onclick="GetAmount();">Recharge</button></div>
+        </div>
+        <div id="balancecheckpage">
+
+        </div>
+    </body>
+    <script src="TypeScript/script.js"></script>
+</html>
