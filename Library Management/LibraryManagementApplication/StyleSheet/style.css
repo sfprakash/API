@@ -1,0 +1,127 @@
+#outermostdiv{
+margin: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: yellowgreen; */
+}
+h1{
+    text-align: center;
+}
+#homepage{
+    display: block;
+    margin: 0 auto;
+    width: 75%;
+    padding: 10rem;
+}
+#newuserpage{
+    display: none;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+#loginuserpage{
+    display: none;
+    width: 50%;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+#greetingpage{
+    display: none;
+}
+#borrowpage{
+    display: none;
+}
+#bookCountPage{
+    display: none;
+}
+#showhistorypage{
+    display: none;
+}
+#returnbookpage{
+    display: none;
+}
+#rechargepage{
+    display: none;
+}
+#balancecheckpage{
+    display: none;
+}
+#btns{
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 1rem;
+}
+.btn{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin: 0 3rem;
+    color: white;
+    background-color: orangered;
+    font-family: sans-serif;
+    font-size: medium;
+}
+.form{
+    width: 100%;
+    padding: 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0.1rem solid indigo;
+    border-radius: 1rem;
+    font-family: sans-serif;
+    font-size: medium;
+    color: black;
+    background-color: yellowgreen;
+}
+.label{
+    width: 100%;
+    padding: 0 2rem 0 0;
+}
+.inputfield{
+    display: flex;
+    padding: 0 0 2rem 0;
+}
+#submitbtn{
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: medium;
+    background-color: indigo;
+    color: white;
+}
+.submitdiv{
+    justify-content: center;
+    display: flex; 
+}
+.navbar{
+    width: 100%;
+    background-color: yellowgreen;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.navbtn{
+    padding: 1rem;
+    margin: auto;
+    text-align: center;
+    /* padding: 0.5rem 1rem; */
+    font-size: medium;
+    /* background-color:grey; */
+    color: white;
+}
+td, th{
+    padding: 10px;
+}
+table{
+    border: 0.1rem solid yellowgreen;
+    border-radius: 0.5rem;
+    margin: auto;
+    width: 100%;
+}

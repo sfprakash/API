@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Library Application</title>
+        <link rel="stylesheet" href="StyleSheet/style.css" type="text/CSS">
+    </head>
+    <body>
+        <div id="outermostdiv">
+
+            <div id="homepage">
+                <h1>LIBRARY MANAGEMENT APPLICATION</h1>
+                <div id="btns">
+                    <div ><button class="btn" onclick=" return NewUserPage();">New User</button></div>
+                    <div ><button class="btn" onclick=" return LoginUserPage();">User Login</button></div>
+                </div>
+            </div>
+
+            <div id="newuserpage">
+                <div class="form">
+                    <form onsubmit="CreateAccount();" id="signupform">
+                        <div class="inputfield">
+                            <div class="label">
+                                <label for="username">USERNAME</label>
+                            </div>
+                            <input type="text" name="username" id="username" autocomplete="username">
+                        </div>
+                        <div class="inputfield">
+                            <div class="label">
+                                <label for="password">PASSWORD</label>
+                            </div>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <div class="inputfield">
+                            <div class="label">
+                                <label for="gender">GENDER</label>
+                            </div>
+                            <input type="text" name="gender" id="gender">
+                        </div>
+                        <div class="inputfield">
+                            <div class="label">
+                                <label for="department">DEPARTMENT</label>
+                            </div>
+                            <input type="text" name="department" id="department">
+                        </div>
+                        <div class="inputfield">
+                            <div class="label">
+                                <label for="mobilenumber">MOBILE NUMBER</label>
+                            </div>
+                            <input type="text" name="mobilenumber" id="mobilenumber">
+                        </div>
+                        <div class="inputfield">
+                            <div class="label">
+                                <label for="mailID">EMAIL ID</label>
+                            </div>
+                            
+                            <input type="email" name="mailID" id="mailID">
+                        </div>
+                        <div class="submitdiv">
+                            <button type="submit" id="submitbtn">CREATE ACCOUNT</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="loginuserpage">
+                <div class="form">
+                    <form  id="loginform">
+                        <div class="inputfield">
+                            <div class="label">
+                                <label for="loginuseremail">USER EMAIL</label>
+                            </div>
+                            <input type="text" name="useremail" id="loginuseremail">
+                        </div>
+                        <div class="inputfield">
+                            <div class="label">
+                                <label for="loginpassword">PASSWORD</label>
+                            </div>
+                            <input type="password" name="password" id="loginpassword">
+                        </div>
+                        <!-- <div class="submitdiv">
+                            <button type="submit" onclick="Login();" id="submitbtn">LOGIN</button>
+                        </div> -->
+                    </form>
+                </div>
+                <div class="submitdiv">
+                    <button  onclick="Login();">Login</button>
+                </div>
+            </div>
+
+            <div id="greetingpage">
+                <div class="navbar">
+                    <div class="navbtn"><button onclick="BorrowBookPage();">BORROW BOOK</button></div>
+                    <div class="navbtn"><button onclick="ShowHistoryPage();">BORROW HISTORY</button></div>
+                    <div class="navbtn"><button onclick="ReturnBookPage();">RETURN BOOK</button></div>
+                    <div class="navbtn"><button onclick="RechargePage();">RECHARGE</button></div>
+                    <div class="navbtn"><button onclick="BalanceCheckPage();">BALANCE CHECK</button></div>
+                    <div class="navbtn"><button onclick="HomePage();">LOGOUT</button></div>
+                </div>
+            </div>
+
+            <div id="borrowpage">
+                <table border="1" id="booktable">
+
+                </table>
+            </div>
+
+            <div id="bookCountPage">
+                <div><label for="count">Enter Count</label></div>
+                <div><input type="number" name="count" id="count"></div>
+                <div><button onclick="GetBookCount();">Borrow</button></div>
+            </div>
+
+            <div id="showhistorypage">
+                <table border="1" id="historytable">
+
+                </table>
+            </div>
+
+            <div id="returnbookpage">
+                <table border="1" id="borrowedtable">
+
+                </table>
+            </div>
+
+            <div id="rechargepage">
+                <div><label for="amount">Enter Amount</label></div>
+                <div><input type="number" name="amount" id="amount"></div>
+                <div><button onclick="GetAmount();">Top-up</button></div>
+            </div>
+
+            <div id="balancecheckpage">
+                <!-- Balance Sentence-->
+            </div>
+
+        </div>
+    </body>
+    <script src="TypeScript/script.js" type="text/JavaScript"></script>
+</html>
