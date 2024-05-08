@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+#home-page{
+    display: block;
+}
+#new-user-page{
+    width: 50%;
+    height: 50vh;
+    margin: 0 auto;
+    display: none;
+}
+#existing-user-page{
+    width: 50%;
+    height: 50vh;
+    margin: 0 auto;
+    display: none;
+}
+.form-field{
+    display: flex;
+}
+.navbar{
+    width: 100%;
+    background-color: yellowgreen;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.btn{
+    padding: 1rem;
+    margin: auto;
+}
+#dataTable{
+    padding: 1rem;
+}
+#medicine-page{
+    display: none;
+}
+#medicine-info{
+    display: none;
+}
+#purchase-block{
+    display: none;
+}
+#quantity-block{
+    display: none;
+}
+#top-up-block{
+    display: none;
+}
+#show-balance-block{
+    display: none;
+}
+#downloadbtn
+{
+    display: none;
+}

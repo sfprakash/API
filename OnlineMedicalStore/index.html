@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Store</title>
+    <link rel="stylesheet" href="CSS/style.css" type="text/CSS">
+    
+</head>
+<body>
+    <div id="home-page">
+        <div><h1>Home</h1></div>
+        <div>
+            <button onclick="newUser();">New User</button>
+            <button onclick="existingUser();">Existing User</button>
+        </div>
+    </div>
+    <div id="new-user-page">
+        <form  name="signupform" id="signupform">
+            <div class="form-field">
+                <div class="label-field">
+                    <label for="userEmail">Email</label>
+                </div>
+                <div class="input-field">
+                    <input type="email" name="email" id="userEmail" autocomplete="email">
+                </div>
+            </div>
+            <div class="form-field">
+                <div class="label-field">
+                    <label for="password">Password</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" name="password" id="password">
+                </div>
+            </div>
+            <div class="form-field">
+                <div class="label-field">
+                    <label for="CFPassword">Confirm Password</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" name="cpassword" id="CFPassword">
+                </div>
+            </div>
+            <div class="form-field">
+                <div class="label-field">
+                    <label for="userPhone">Phone Number</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" name="phone" id="userPhone" autocomplete="tel">
+                </div>
+            </div>
+            <div>
+                <button type="submit" >SignUp</button>
+            </div>
+        </form>
+       
+    </div>
+    <div id="existing-user-page">
+        <form action="" name="signin-form">
+            <div class="form-field">
+                <div class="label-field">
+                    <label for="existingUserId">UserID</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" name="existingUserId" id="existingUserId">
+                </div>
+            </div>
+            <div class="form-field">
+                <div class="label-field">
+                    <label for="password">Password</label>
+                </div>
+                <div class="input-field">
+                    <input type="text" name="password" id="existingUserPassword">
+                </div>
+            </div>
+            
+        </form>
+        <div>
+            <button  onclick="SignIn();">SignIn</button>
+        </div>
+    </div>
+    <div id="medicine-page">
+        <div class="navbar">
+            <div class="btn"><button onclick="showMedicine();" id="medicine-btn">Medicines</button></div>
+            <div class="btn"><button onclick="Purchase();" id="purchase-btn">Purchase</button></div>
+            <div class="btn"><button onclick="CancelOrder()" id="cancel-order-btn">Cancel</button></div>
+            <div class="btn"><button onclick="OrderHistory();" id="order-history-btn">Order History</button></div>
+            <div class="btn"><button onclick="TopUp();">Top-Up</button></div>
+            <div class="btn"><button onclick="ShowBalance();">Balance Check</button></div>
+            <div class="btn"><button onclick="home()">Logout</button></div>
+        </div>
+    </div>
+    <div id="medicine-info">
+        <table id="dataTable">
+              <!-- Medicine details -->
+          </table>
+    </div>
+    <div id="purchase-block">
+        <table id="purchase-table">
+              <tr>
+                <th class="thead">Medicine ID</th>
+                <th class="thead">Medicine Name</th>
+                <th class="thead">Count</th>
+                <th class="thead">Price</th>
+                <th class="thead">Expiry Date</th>
+                <th class="thead">Manipulate</th>
+              </tr>
+          </table>
+    </div>
+    <div id="quantity-block">
+        <div><label for="quantity">Enter Quantity</label></div>
+        <div><input type="number" name="quantity" id="quantity"></div>
+        <div><button onclick="getQuantity();">buy</button></div>
+    </div>
+    <div id="cancel-order-block">
+        <table id="cancel-order">
+            <!--order items will be displayed here-->
+        </table>
+    </div>
+    <div id="order-history-block">
+        <button id="downloadbtn" onclick="TableToCSV();">Download</button>
+        <table id="order-history">
+            <!--order history items will be displayed here-->
+        </table>
+    </div>
+    <div id="top-up-block">
+        <div><label for="top-up-amount">Enter Amount</label></div>
+        <div><input type="number" name="top-up-amount" id="top-up-amount"></div>
+        <div><button onclick="getAmount();">Top-up</button></div>
+    </div>
+    <div id="show-balance-block">
+        <!-- Balance Sentence-->
+    </div>
+</body>
+<script src="TypeScript/script.js" type="text/JavaScript"></script>
+</html>
