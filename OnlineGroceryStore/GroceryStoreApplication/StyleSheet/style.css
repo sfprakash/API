@@ -1,0 +1,245 @@
+#outermostdiv{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: yellowgreen; */
+}
+#homepage{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+#newuserpage{
+    display: none;
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    
+}
+#loginuserpage{
+    display: none;
+    width: 40%;
+    height: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+#navbardiv{
+    display: none;
+}
+#greetingpage{
+    display: none;
+    /* background-color: aqua; */
+}
+#productpage{
+    display: none;
+}
+#addproductform{
+    display: none;
+}
+#purchasepage{
+    display: none;
+    width: 100%;
+}
+#showcarddiv{
+    display: flex;
+    flex-wrap: wrap;
+}
+#cartpage{
+    display: block;
+}
+#orderhistorypage{
+    display: block;
+}
+#orderhistoryouterdiv{
+    display: block;
+    margin: auto;
+    width: fit-content;
+    height: fit-content;
+    padding: 2rem;
+    border: 0.2rem solid indigo;
+}
+#orderhistoryheader{
+    display: flex;
+}
+#orderhistorycontent{
+    display: flex;
+}
+#ohorderid{
+    margin: 0 1rem;
+}
+#ohuserid{
+    margin: 0 1rem;
+}
+#ohusername{
+    margin: 0 1rem;
+}
+#exportbtn{
+    margin: 0 1rem;
+}
+#exportbtn{
+    display: flex;
+}
+#orderhistorytablediv{
+    display: block;
+}
+#orderhistorytable{
+    border: 0.2rem solid black;
+}
+
+
+.carddiv{
+    border: 0.1rem solid darkorange;
+    border-radius: 2rem;
+    padding: 2rem 2rem 0rem;
+    margin: 2rem 3rem;
+    background-color: cadetblue;
+}
+.imagediv{
+    border-color: black;
+    padding: 0.1rem;
+    border-radius: 1rem;
+    border: 0.2rem solid black;
+    background-color: white;
+    height: 15rem;
+    width: 12rem;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.productimage{
+    height: 10rem;
+    width: 10rem;
+}
+.descriptiondiv{
+    height: 10rem;
+    padding: 0.1rem;
+    margin: 1rem 0 0 0;
+}
+.productnamediv{
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    display: flex;
+    margin: 0.5rem;
+    color: white;
+}
+.productpricediv{
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    display: flex;
+    margin: 0.5rem;
+    color: white;
+}
+.addcartbtndiv{
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    display: flex;
+    margin: 0.5rem;
+}
+.addcartbtn{
+    font-size: medium;
+    background-color: darkorange;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+#userprofileimage{
+    width: 50px;
+    border: 50%;
+}
+
+#heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+#btns{
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 1rem;
+}
+.btn{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    margin: 0 3rem;
+    color: white;
+    background-color: orangered;
+    font-family: sans-serif;
+    font-size: medium;
+}
+.formcontent{
+    width: 100%;
+    padding: 3.5rem;
+    display: block;
+    border: 0.1rem solid indigo;
+    border-radius: 1rem;
+    font-family: sans-serif;
+    font-size: medium;
+    color: black;
+    background-color: yellowgreen;
+}
+.form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.label{
+    width: 100%;
+    padding: 0 2rem 0 0;
+}
+.inputfield{
+    display: flex;
+    padding: 0 0 2rem 0;
+}
+#submitbtn{
+    text-align: center;
+    padding: 0.5rem 1rem;
+    font-size: medium;
+    background-color: indigo;
+    color: white;
+}
+.submitdiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navbar{
+    width: 100%;
+    background-color:cadetblue;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.navbtn{
+    padding: 1rem;
+    margin: auto;
+    text-align: center;
+    /* padding: 0.5rem 1rem; */
+    font-size: medium;
+    /* background-color:grey; */
+    color: white;
+}
+.pfield
+{
+    display: flex;
+    padding: 0 0.5rem;
+}
+#productformdiv{
+    display: flex;
+}

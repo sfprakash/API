@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+    <link rel="stylesheet" href="StyleSheet/style.css" type="text/CSS">
+</head>
+<body>
+    <div id="outermostdiv">
+
+        <div id="homepage">
+            <div id="heading"><h1>GROCERY STORE APPLICATION</h1></div>
+            <div id="content">
+                <div class="btnfield"><button class="btn" onclick="NewUserPage()">New User</button></div>
+                <div class="btnfield"><button class="btn" onclick="return LoginUserPage();">User Login</button></div> 
+            </div>
+        </div>
+
+        <div id="newuserpage">
+            <div class="formcontent">
+                <form id="signupform" enctype="multipart/form-data">
+                    <div class="inputfield">
+                        <div class="label">
+                            <label for="username">USERNAME</label>
+                        </div>
+                        <input type="text" name="username" id="username" autocomplete="username">
+                    </div>
+                    <div class="inputfield">
+                        <div class="label">
+                            <label for="password">PASSWORD</label>
+                        </div>
+                        <input type="text" name="password" id="password">
+                    </div>
+                    <div class="inputfield">
+                        <div class="label">
+                            <label for="cpassword">CONFIRM PASSWORD</label>
+                        </div>
+                        <input type="password" name="cpassword" id="cpassword">
+                    </div>
+                    <div class="inputfield">
+                        <div class="label">
+                            <label for="mailID">EMAIL ID</label>
+                        </div>
+                        
+                        <input type="email" name="mailID" id="mailID">
+                    </div>
+                    <div class="inputfield">
+                        <div class="label">
+                            <label for="phonenumber">PHONE NUMBER</label>
+                        </div>
+                        <input type="text" name="phonenumber" id="phonenumber">
+                    </div>
+                    <div class="inputfield">
+                        <div class="label">
+                            <label for="profileimage">PROFILE IMAGE</label>
+                        </div>
+                        <input type="file" name="image" id="profileimage">
+                    </div>
+                    
+                    <div class="submitdiv">
+                        <button type="submit" id="submitbtn">CREATE ACCOUNT</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    
+        <div id="loginuserpage">
+            <div class="formcontent">
+                <div class="form">
+                    <form  id="loginform">
+                        <div class="inputfield">
+                            <div class="label">
+                                <label for="loginusername">USER NAME</label>
+                            </div>
+                            <input type="text" name="loginusername" id="loginusername">
+                        </div>
+                        <div class="inputfield">
+                            <div class="label">
+                                <label for="loginpassword">PASSWORD</label>
+                            </div>
+                            <input type="password" name="password" id="loginpassword">
+                        </div>
+                        <!-- <div class="submitdiv">
+                            <button type="submit" onclick="Login();" id="submitbtn">LOGIN</button>
+                        </div> -->
+                    </form>
+                </div>
+                <div class="submitdiv">
+                    <button  onclick="Login();" id="submitbtn">Login</button>
+                </div>
+            </div>
+            
+        </div>
+
+        <div id="navbardiv">
+            <div class="navbar">
+                <div class="navbtn"><button onclick="GreetingPage();">HOME</button></div>
+                <div class="navbtn"><button onclick="ProductPage(); ">PRODUCTS</button></div>
+                <div class="navbtn"><button onclick="PurchasePage();">SHOP</button></div>
+                <div class="navbtn"><button onclick="CartPage();">CART</button></div>
+                <div class="navbtn"><button onclick="OrderHistoryPage();">ORDERS HISTORY</button></div>
+                <div class="navbtn"><button onclick="RechargePage();">Recharge</button></div>
+                <div class="navbtn"><button onclick="ShowBalance()">Balance Check</button></div>
+                <div class="navbtn"><button onclick="HomePage();">Logout</button></div>
+            </div>
+            
+        </div>
+
+        <div id="greetingpage">
+            <div id="homecontent">
+                <!--Welcome Message-->
+            </div>
+        </div>
+
+        <div id="productpage">
+            <div id="addproductbtn">
+                <button onclick="DisplayProductForm();" >Add Product</button>
+            </div>
+            <div id="productformdiv">
+                <form action="" id="productform">
+                    <div class="pfield">
+                        <label for="productname">PRODUCT NAME</label>
+                        <input type="text" name="productname" id="productname">
+                    </div>
+                    <div class="pfield">
+                        <label for="productquantity">PRODUCT QUANTITY</label>
+                        <input type="number" name="productquantity" id="productquantity">
+                    </div>
+                    <div class="pfield">
+                        <label for="unitprice">UNIT PRICE</label>
+                        <input type="number" name="unitprice" id="unitprice">
+                    </div>
+                    <div class="pfield">
+                        <label for="purchasedate">PURCHASE DATE</label>
+                        <input type="date" name="purchasedate" id="purchasedate">
+                    </div>
+                    <div class="pfield">
+                        <label for="expirydate">EXPIRY DATE</label>
+                        <input type="date" name="expirydate" id="expirydate">
+                    </div>
+                    <div class="pfield">
+                        <label for="productphoto">PRODUCT IMAGE</label>
+                        <input type="file" name="productphoto" id="productphoto">
+                    </div>
+                    <div class="pfield">
+                        <button type="submit">ADD PRODUCT</button>
+                    </div>
+                </form>
+            </div>
+            <div id="producttablediv">
+                <table border="2" id="producttable"> 
+
+                </table>
+            </div>
+        </div>
+
+        <div id="purchasepage">
+            <div id="showcarddiv">
+
+            </div>
+        </div>
+
+        <div id="cartpage">
+            <table id="carttable">
+
+            </table>
+        </div>
+
+        <div id="orderhistorypage">
+
+        </div>
+
+        <div id="rechargepage">
+            <div><label for="amount">Enter Amount</label></div>
+            <div><input type="number" name="amount" id="rechargeamount"></div>
+            <div><button onclick="GetAmount();">Recharge</button></div>
+        </div>
+
+        <div id="balancecheckpage">
+
+        </div>
+
+    </div>
+</body>
+<script src="TypeScript/script.js" type="text/JavaScript"></script>
+</html>
